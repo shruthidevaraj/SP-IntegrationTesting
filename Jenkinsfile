@@ -5,6 +5,7 @@ pipeline {
         stage ('Compile Stage') {
 
             steps {
+                echo "I AM HERE, EXECUTING THIS LINE"
                 mocha MyBooking/MyBooking.js
             }
         }
