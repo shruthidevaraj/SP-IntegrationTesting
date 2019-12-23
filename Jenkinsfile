@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'mocha MyBooking/Mybooking.js'
+                mocha MyBooking/Mybooking.js
             }
         }
     }
