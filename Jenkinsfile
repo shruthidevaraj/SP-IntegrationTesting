@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker { image 'node:6.3' } }
+    agent { label 'master' }
     stages {
         stage('build') {
             steps {
-                echo "THIS IS HERE"
+                echo "Hello World!"
             }
         }
     }
